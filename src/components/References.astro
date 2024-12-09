@@ -1,0 +1,42 @@
+---
+const references = [
+{
+    text: "Fran is an incredible developer, always focused on clean and scalable solutions. His technical leadership is exceptional.",
+    author: "Jose Cazal, Frontend Architect lead ITTI S.A.E.C.A.",
+  },
+  {
+    text: "Fran is an incredible developer, always focused on clean and scalable solutions. His technical leadership is exceptional.",
+    author: "Lic. Rodrigo Martinez, e-tica",
+  },
+  {
+    text: "Working with Fran was a unique experience. His ability to solve complex problems with Flutter is impressive.",
+    author: "Univ. Javier Lopez, Student Representative - FPUNA",
+  },
+  {
+    text: "Fran has a detail-oriented mindset and always delivers more than expected. A great professional and collaborator.",
+    author: "Dr. Jose Colbes, Universidad Nacional de Asunción",
+  },
+];
+---
+
+<div class="bg-gray-900 dark:bg-gray-800 py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white text-center">References</h2>
+    <p class="text-gray-400 mt-4 text-center">
+      Some comments about my work and collaboration.
+    </p>
+
+    <!-- References container as a list -->
+    <div class="mt-8 space-y-6">
+      {references.map((reference, index) => (
+        <div
+          id={`reference-${index}`}
+          class="bg-gray-800 text-white rounded-lg shadow-md p-6"
+        >
+          <p class="italic">{reference.text}</p>
+          <p class="mt-4 text-blue-400 font-semibold">{reference.author}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

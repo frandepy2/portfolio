@@ -1,0 +1,36 @@
+---
+  import me from '../assets/me.jpg'; // Cambia esto por la ruta de tu imagen
+---
+
+<div class="bg-gray-100 dark:bg-gray-900 py-16">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center md:gap-x-20">
+    <!-- Image Section -->
+    <div class="w-full md:w-1/3 mb-8 md:mb-0">
+      <img
+        src={me.src} 
+        alt="Hacktoberfest Presentation"
+        class="rounded-lg shadow-md"
+      />
+    </div>
+
+    <!-- Text Section -->
+    <div class="w-full md:w-1/2 md:pl-12 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-white">About Me</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        As a Software Developer, I bring a passion for building robust,
+        user-focused applications across platforms. With expertise in mobile and
+        web development, I design scalable solutions that merge clean
+        architecture with seamless functionality.
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mt-4">
+        I thrive on solving complex problems, optimizing systems, and
+        contributing to innovative projects that make an impact. Beyond coding,
+        I'm committed to continuous learning and sharing knowledge to empower
+        others.
+      </p>
+      <p class="text-gray-600 dark:text-gray-400 mt-4">
+        Thank you for exploring my journey in software development!
+      </p>
+    </div>
+  </div>
+</div>

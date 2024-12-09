@@ -1,0 +1,49 @@
+<div class="bg-gray-900 dark:bg-gray-800 text-white sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <a href="#home">Fran Dev</a>
+      </div>
+  
+      <!-- Links (Desktop) -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-500">About Me</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#work" class="hover:text-blue-500">Expertise</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+  
+      <!-- Menu (Mobile) -->
+      <button
+        id="menu-button"
+        class="md:hidden text-2xl focus:outline-none"
+        onclick="toggleMenu()"
+      >
+        ☰
+      </button>
+    </nav>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
+      <ul class="space-y-4 px-6 py-4">
+        <li><a href="#about" class="block hover:text-blue-500">About Me</a></li>
+        <li><a href="#skills" class="block hover:text-blue-500">Skills</a></li>
+        <li><a href="#work" class="block hover:text-blue-500">Expertise</a></li>
+        <li><a href="#projects" class="block hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      function toggleMenu() {
+        if (mobileMenu) {
+          mobileMenu.classList.toggle('hidden');
+        }
+      }
+    </script>
+  </div>
+  

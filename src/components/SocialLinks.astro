@@ -1,0 +1,40 @@
+---
+import LinkedInIcon from '../assets/linkedin.svg'; // Update with your actual path
+import GitHubIcon from '../assets/github.svg'; // Update with your actual path
+import MailIcon from '../assets/mail.svg'; // Add this icon to your assets
+---
+
+<div class="bg-gray-100 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Social Networks</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-4">
+        Connect with me through my social networks.
+      </p>
+      <div class="flex justify-center mt-6 space-x-4">
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/francisco-sanabria-0833b01b2/"
+          target="_blank"
+          class="text-blue-700 dark:text-blue-400 hover:underline"
+        >
+          <img src={LinkedInIcon.src} alt="LinkedIn" class="w-8 h-8" />
+        </a>
+        <!-- GitHub -->
+        <a
+          href="https://github.com/frandepy2"
+          target="_blank"
+          class="text-gray-900 dark:text-white hover:underline"
+        >
+          <img src={GitHubIcon.src} alt="GitHub" class="w-8 h-8" />
+        </a>
+        <!-- Email -->
+        <a
+          href="mailto:frandepy@gmail.com"
+          target="_blank"
+          class="text-gray-900 dark:text-white hover:underline"
+        >
+          <img src={MailIcon.src} alt="Email" class="w-8 h-8" />
+        </a>
+      </div>
+    </div>
+</div>
