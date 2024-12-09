@@ -1,48 +1,77 @@
-# Astro Starter Kit: Basics
+# Fran's Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+Welcome to my portfolio project! This project is built using Astro, a modern static site generator.
+
+## Table of Contents
+
+- [Fran's Portfolio](#frans-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## Introduction
+
+This is a personal portfolio project designed to showcase my skills, projects, and experiences. It is built with Astro to ensure fast performance and a great developer experience.
+
+## Features
+
+- **Fast and Lightweight**: Built with Astro for optimal performance.
+- **Responsive Design**: Works on all devices, from desktops to mobile phones.
+- **Easy to Customize**: Simple and clean code structure for easy customization.
+- **SEO Friendly**: Optimized for search engines to improve visibility.
+
+## Installation
+
+To get started with the Whole Wasp portfolio, follow these steps:
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/frandepy2/portfolio.git
+    ```
+
+2. **Navigate to the project directory**:
+
+    ```bash
+    cd portfolio
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To start the development server, run:
+
+```bash
+npm start
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This will launch the portfolio on `http://localhost:4321`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+To build the project for production, run:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run build
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+The output will be in the `dist` directory.
 
-## 🧞 Commands
+## Contributing
 
-All commands are run from the root of the project, from a terminal:
+Contributions are welcome! If you have any ideas, suggestions, or issues, please open an issue or submit a pull request.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## License
 
-## 👀 Want to learn more?
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+Thank you for checking out my portfolio project! Feel free to reach out if you have any questions or feedback.
