@@ -7,7 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "static",
   site: "https://frandepy2.github.io/portfolio/",
-  base: ".",
   integrations: [tailwind({ applyBaseStyles: true })],
   build: {
     client: "dist", // The build folder
