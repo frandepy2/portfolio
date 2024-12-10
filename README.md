@@ -75,3 +75,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Thank you for checking out my portfolio project! Feel free to reach out if you have any questions or feedback.
+
+Make with love. See my portfolio project
