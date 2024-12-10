@@ -2,7 +2,7 @@
 import Avatar from './avatar.astro'; // Componente para tu avatar
 ---
 
-<div class="bg-gray-900 text-white dark:bg-gray-800 min-h-screen flex items-center justify-center">
+<div id="home" class="bg-gray-900 text-white dark:bg-gray-800 min-h-screen flex items-center justify-center">
   <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
     <!-- Left Content -->
     <div class="md:w-1/2 text-center md:text-left">
@@ -13,8 +13,18 @@ import Avatar from './avatar.astro'; // Componente para tu avatar
         Mobile Developer | Flutter Enthusiast | Clean Architecture Advocate | Computer Science Student
       </p>
       <div class="mt-6">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Contact me</button>
-        <button class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded ml-4">My Portfolio</button>
+        <!-- Button to Contact Section -->
+        <a href="#contact">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Contact me
+          </button>
+        </a>
+        <!-- Button to Portfolio Section -->
+        <a href="#projects">
+          <button class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded ml-4">
+            My Projects
+          </button>
+        </a>
       </div>
     </div>
 
