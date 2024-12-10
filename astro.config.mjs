@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   output: "static",
+  site: "https://frandepy2.github.io/",
   base: "./",
   integrations: [tailwind({ applyBaseStyles: true })],
 });
