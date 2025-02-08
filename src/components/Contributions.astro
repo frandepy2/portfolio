@@ -1,0 +1,48 @@
+---
+import contribution1 from "../assets/contribution_1.png";
+import portfolio from "../assets/portfolio.png";
+---
+
+<div id="projects" class="bg-gray-100 dark:bg-gray-900 py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 dark:text-white">
+      Contributions
+    </h2>
+    <p class="text-gray-600 dark:text-gray-400 mt-4">
+      Here are some contributions I have made.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+            <img src={contribution1.src} alt="Open Source Contribution" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
+                Open Source Contribution - Flutter Plugin
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mt-2 text-justify">
+                I contributed to the open-source Flutter plugin 
+                <strong>app_settings</strong>, improving compatibility by adding 
+                support for Swift Package Manager (SPM). This enhancement 
+                facilitates easier dependency management for iOS developers. 
+                The contribution involved analyzing the plugin’s architecture, 
+                integrating SPM support, and ensuring smooth functionality 
+                across multiple environments. This experience reinforced my 
+                skills in open-source collaboration and code contribution.
+              </p>
+              <p><a
+                href="https://github.com/spencerccf/app_settings/pull/230"
+                target="_blank"
+                class="mt-4 inline-block text-blue-500 hover:underline"
+              >
+                See in GitHub
+              </a></p>
+              <a
+                href="https://pub.dev/packages/app_settings"
+                target="_blank"
+                class="mt-4 inline-block text-blue-500 hover:underline"> 
+                View on Pub.dev v5.2.0
+                </a>
+            </div>
+          </div>
+    </div>
+</div>
