@@ -1,40 +1,53 @@
 ---
-import LinkedInIcon from '../assets/linkedin.svg'; // Update with your actual path
-import GitHubIcon from '../assets/github.svg'; // Update with your actual path
-import MailIcon from '../assets/mail.svg'; // Add this icon to your assets
+import LinkedInIcon from '../assets/linkedin.svg';
+import GitHubIcon from '../assets/github.svg';
+import MailIcon from '../assets/mail.svg';
 ---
 
-<div id="contact" class="bg-gray-100 dark:bg-gray-800 py-16">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Social Networks</h2>
-      <p class="text-gray-600 dark:text-gray-400 mt-4">
-        Connect with me through my social networks.
-      </p>
-      <div class="flex justify-center mt-6 space-x-4">
-        <!-- LinkedIn -->
-        <a
-          href="https://www.linkedin.com/in/francisco-sanabria-0833b01b2/"
-          target="_blank"
-          class="text-blue-700 dark:text-blue-400 hover:underline"
-        >
-          <img src={LinkedInIcon.src} alt="LinkedIn" class="w-8 h-8" />
-        </a>
-        <!-- GitHub -->
-        <a
-          href="https://github.com/frandepy2"
-          target="_blank"
-          class="text-gray-900 dark:text-white hover:underline"
-        >
-          <img src={GitHubIcon.src} alt="GitHub" class="w-8 h-8" />
-        </a>
-        <!-- Email -->
-        <a
-          href="mailto:frandepy@gmail.com"
-          target="_blank"
-          class="text-gray-900 dark:text-white hover:underline"
-        >
-          <img src={MailIcon.src} alt="Email" class="w-8 h-8" />
-        </a>
-      </div>
+<section id="contact" class="bg-slate-950 py-24">
+  <div class="max-w-4xl mx-auto px-6 text-center fade-up">
+    <p class="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">Contact</p>
+    <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Let's work together</h2>
+    <p class="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed mb-10">
+      I'm actively looking for remote opportunities. Whether you have a project, a question, or just want to connect — my inbox is always open.
+    </p>
+
+    <a
+      href="mailto:frandepy@gmail.com"
+      class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/25 mb-12 text-lg"
+    >
+      <img src={MailIcon.src} alt="" class="w-5 h-5 invert" />
+      frandepy@gmail.com
+    </a>
+
+    <div class="border-t border-slate-800 pt-10 flex justify-center items-center gap-6">
+      <a
+        href="https://www.linkedin.com/in/francisco-sanabria-0833b01b2/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2.5 text-slate-400 hover:text-indigo-400 transition-colors duration-200 font-medium"
+        aria-label="LinkedIn"
+      >
+        <img src={LinkedInIcon.src} alt="LinkedIn" class="w-6 h-6 opacity-70 hover:opacity-100 transition-opacity" />
+        <span class="text-sm">LinkedIn</span>
+      </a>
+
+      <div class="w-px h-6 bg-slate-800"></div>
+
+      <a
+        href="https://github.com/frandepy2"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2.5 text-slate-400 hover:text-indigo-400 transition-colors duration-200 font-medium"
+        aria-label="GitHub"
+      >
+        <img src={GitHubIcon.src} alt="GitHub" class="w-6 h-6 opacity-70 hover:opacity-100 transition-opacity" />
+        <span class="text-sm">GitHub</span>
+      </a>
     </div>
-</div>
+
+    <p class="text-slate-600 text-xs mt-10">
+      © {new Date().getFullYear()} Francisco Sanabria. Built with Astro & Tailwind CSS.
+    </p>
+  </div>
+</section>

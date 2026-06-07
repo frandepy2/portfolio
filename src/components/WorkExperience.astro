@@ -1,203 +1,114 @@
-<div id="work" class="bg-gray-50 dark:bg-gray-900 py-16">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-gray-800 dark:text-white text-center">
-      Work experience
-    </h2>
-    <div class="relative border-l border-gray-200 dark:border-gray-700 mt-8">
-      <!-- Job 1 -->
+<section id="work" class="bg-slate-900 py-24">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">Career</p>
+      <h2 class="text-4xl font-bold text-white">Work Experience</h2>
+    </div>
 
-      <div class="mb-10 ml-6">
-        <span
-          class="absolute flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -left-3 ring-8 ring-gray-50 dark:ring-gray-900"
-        >
-          <svg
-            class="w-3 h-3 text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414L11 9.586V7z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <h3
-          class="flex items-center mb-1 text-lg font-semibold text-gray-800 dark:text-white"
-        >
-          Frontend Architect
-          <span
-            class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3"
-          >
-            Present
-          </span>
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          ITTI S.A.E.C.A. | March 2024 - Present
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-400"></p>
-        <ul class="mt-2 text-gray-600 dark:text-gray-400">
-          <li>
-            Developed architectural solutions for mobile applications, ensuring
-            scalability and maintainability.
-          </li>
-          <li>
-            Implemented clean architecture in mobile projects to standardize
-            coding practices and enhance modularity.
-          </li>
-          <li>
-            Led the integration of new features into existing apps, ensuring
-            compatibility across multiple platforms.
-          </li>
-          <li>
-            Optimized performance for mobile apps by identifying and fixing
-            bottlenecks in code and infrastructure.
-          </li>
-          <li>
-            Provided mentorship to junior developers, fostering a culture of
-            knowledge sharing and best practices.
-          </li>
-          <li>
-            Collaborated with cross-functional teams to align technical
-            solutions with business goals.
-          </li>
-          <li>
-            Conducted code reviews to ensure adherence to best practices and
-            maintain code quality standards.
-          </li>
-          <li>
-            Researched and integrated third-party tools and libraries to enhance
-            app functionality and efficiency.
-          </li>
-          <li>
-            Designed and implemented GitHub Actions workflows for CI/CD,
-            automating build, test, and deployment pipelines to improve
-            development efficiency.
-          </li>
-        </ul>
+    <div class="relative">
+      <div class="absolute left-0 top-0 bottom-0 w-px bg-slate-800 ml-3"></div>
+
+      <!-- Job 1 — e-tica - EKO and Banco Familiar (current) -->
+      <div class="relative pl-12 mb-10 fade-up">
+        <div class="absolute left-0 w-7 h-7 bg-indigo-600 rounded-full flex items-center justify-center ring-4 ring-slate-900 shadow-lg shadow-indigo-500/30">
+          <div class="w-2 h-2 bg-white rounded-full"></div>
+        </div>
+        <div class="bg-slate-800/60 border border-indigo-500/30 rounded-xl p-6 hover:border-indigo-500/60 transition-colors duration-200">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-1">
+            <h3 class="text-lg font-semibold text-white">Senior Mobile Developer · TL Backup</h3>
+            <span class="bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium px-2.5 py-1 rounded-full">Present</span>
+          </div>
+          <p class="text-indigo-400 text-sm font-medium mb-4">e-tica - EKO and Banco Familiar &middot; May 2025 – Present</p>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Serving as <strong class="text-slate-300 font-medium">Chapter Lead</strong>, standardizing GitFlow and mobile development practices across multiple squads.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Currently serving as <strong class="text-slate-300 font-medium">Tech Lead Backup</strong>.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Implemented <strong class="text-slate-300 font-medium">Visa Click to Pay</strong> end-to-end on Android (debit & credit), navigating undocumented homologation environments.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Designed and implemented a <strong class="text-slate-300 font-medium">RBAC system from scratch</strong> — roles engine, guards, and context-based permission checks.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Replaced an ML Kit-based document scanner with a <strong class="text-slate-300 font-medium">native camera implementation</strong> after diagnosing Android process-death crashes caused by memory pressure.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Led the <strong class="text-slate-300 font-medium">Android API 35 migration</strong>, ensuring full compliance with the latest platform requirements across the app.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Refactoring a legacy module using the <strong class="text-slate-300 font-medium">Strangler Fig pattern</strong> without disrupting production.</span></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Job 2 -->
-      <div class="mb-10 ml-6">
-        <span
-          class="absolute flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -left-3 ring-8 ring-gray-50 dark:ring-gray-900"
-        >
-          <svg
-            class="w-3 h-3 text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414L11 9.586V7z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-800 dark:text-white">
-          Mobile Developer
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          e-tica | July 2022 - March 2024
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-400">
-          I played a key role in the development of EKO, a banking application
-          designed to streamline financial services for users. Leveraging my
-          expertise in Flutter.
-        </p>
-        <ul class="mt-2 text-gray-600 dark:text-gray-400">
-          <li>
-            Implemented a trusted device feature, reducing fraud cases by 30%.
-          </li>
-          <li>
-            Developed and implemented SPI 2.0, including refund request
-            functionality and Alias, complying with state requirements.
-          </li>
-          <li>
-            Implemented an optional physical card feature in the app,
-            significantly reducing logistical costs for the company.
-          </li>
-          <li>
-            Collaborated in the app's deployment to stores and technology
-            migration.
-          </li>
-          <li>
-            Contributed to corrections required to meet the pentest compliance
-            requirements.
-          </li>
-          <li>
-            Adapted and migrated the app following the bank's database
-            migration.
-          </li>
-          <li>
-            Fixed key functions, including the automatic activation of cards.
-          </li>
-          <li>
-            Created tools that reduced the identity card search time requested
-            by the bank from 2 hours to 5 minutes.
-          </li>
-        </ul>
+      <!-- Job 2 — itti -->
+      <div class="relative pl-12 mb-10 fade-up">
+        <div class="absolute left-0 w-7 h-7 bg-slate-700 rounded-full flex items-center justify-center ring-4 ring-slate-900">
+          <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 hover:border-indigo-500/30 transition-colors duration-200">
+          <h3 class="text-lg font-semibold text-white mb-1">Mobile Architect</h3>
+          <p class="text-indigo-400 text-sm font-medium mb-4">itti &middot; March 2024 – May 2025</p>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Led mobile architecture decisions across projects at <strong class="text-slate-300 font-medium">Paraguay's leading tech company</strong>, ensuring scalability and long-term maintainability.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Developed <strong class="text-slate-300 font-medium">KYC SDKs</strong> for digital onboarding flows, enabling identity verification at scale.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Implemented Clean Architecture standards across Flutter projects, standardizing practices across the mobile team.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Designed and implemented GitHub Actions workflows for CI/CD, automating build, test, and deployment pipelines.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Mentored junior developers and conducted code reviews to maintain quality standards.</span></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Job 3 -->
-      <div class="mb-10 ml-6">
-        <span
-          class="absolute flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -left-3 ring-8 ring-gray-50 dark:ring-gray-900"
-        >
-          <svg
-            class="w-3 h-3 text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414L11 9.586V7z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-800 dark:text-white">
-          Intern
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          Baker Tilly Paraguay | 2017
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-400">
-          Supported system implementation projects with Python, customizing Odoo
-          ERP to meet client requirements. Collaborated with clients to gather
-          and prioritize needs, ensuring tailored solutions. Delivered seamless
-          integrations, user training, and technical support to enhance system
-          efficiency and client satisfaction.
-        </p>
+      <!-- Job 3 — e-tica - EKO and Banco Familiar (first stint) -->
+      <div class="relative pl-12 mb-10 fade-up">
+        <div class="absolute left-0 w-7 h-7 bg-slate-700 rounded-full flex items-center justify-center ring-4 ring-slate-900">
+          <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+        </div>
+        <div class="bg-slate-800/50 border border-slate-700/60 rounded-xl p-6 hover:border-indigo-500/30 transition-colors duration-200">
+          <div class="flex flex-wrap items-start justify-between gap-3 mb-1">
+            <h3 class="text-lg font-semibold text-white">Mobile Developer</h3>
+            <span class="bg-slate-700/60 border border-slate-600/40 text-slate-400 text-xs font-medium px-2.5 py-1 rounded-full">e-tica - EKO and Banco Familiar</span>
+          </div>
+          <p class="text-indigo-400 text-sm font-medium mb-3">e-tica - EKO and Banco Familiar &middot; July 2022 – March 2024</p>
+          <p class="text-slate-400 text-sm mb-4">
+            Core developer on <strong class="text-slate-300">EKO</strong>, a fintech banking app serving thousands of users, built with Flutter.
+          </p>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Implemented a trusted device feature, <strong class="text-slate-300 font-medium">reducing fraud cases by 30%</strong>.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Developed SPI 2.0, including refund request functionality and Alias, complying with state requirements.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Created internal tools that <strong class="text-slate-300 font-medium">reduced identity lookup time from 2 hours to 5 minutes</strong>.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Led the app's deployment to stores and managed a full technology migration.</span></li>
+            <li class="flex gap-2 items-start"><span class="text-indigo-500 mt-0.5 shrink-0">▸</span><span>Contributed to pentest compliance requirements and database migration.</span></li>
+          </ul>
+        </div>
       </div>
-      <!-- Job 3 -->
-      <div class="mb-10 ml-6">
-        <span
-          class="absolute flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -left-3 ring-8 ring-gray-50 dark:ring-gray-900"
-        >
-          <svg
-            class="w-3 h-3 text-white"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 00.293.707l2 2a1 1 0 101.414-1.414L11 9.586V7z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-800 dark:text-white">
-          Intern
-        </h3>
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          Optinet - UFINET | 2016
-        </p>
-        <p class="mt-2 text-gray-600 dark:text-gray-400">
-          Assisted the Commercial Manager in streamlining operations by
-          gathering and analyzing client requirements.
-        </p>
+
+      <!-- Early career divider -->
+      <div class="relative pl-12 mb-8 fade-up">
+        <div class="absolute left-0 w-7 h-7 flex items-center justify-center ml-0">
+          <div class="w-px h-6 bg-slate-700"></div>
+        </div>
+        <p class="text-xs font-semibold text-slate-600 uppercase tracking-widest pt-1">Early career</p>
       </div>
+
+      <!-- Job 4 — Baker Tilly -->
+      <div class="relative pl-12 mb-8 fade-up">
+        <div class="absolute left-0 w-5 h-5 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center ring-2 ring-slate-900" style="top:2px">
+          <div class="w-1.5 h-1.5 bg-slate-600 rounded-full"></div>
+        </div>
+        <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-5 hover:border-slate-600/60 transition-colors duration-200">
+          <h3 class="text-base font-semibold text-slate-300 mb-1">Intern — ERP Customization</h3>
+          <p class="text-slate-500 text-sm font-medium mb-2">Baker Tilly Paraguay &middot; 2017</p>
+          <p class="text-slate-500 text-sm">
+            Customized Odoo ERP with Python to meet client requirements. Delivered integrations, user training, and technical support.
+          </p>
+        </div>
+      </div>
+
+      <!-- Job 5 — Optinet -->
+      <div class="relative pl-12 fade-up">
+        <div class="absolute left-0 w-5 h-5 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center ring-2 ring-slate-900" style="top:2px">
+          <div class="w-1.5 h-1.5 bg-slate-600 rounded-full"></div>
+        </div>
+        <div class="bg-slate-800/30 border border-slate-700/40 rounded-xl p-5 hover:border-slate-600/60 transition-colors duration-200">
+          <h3 class="text-base font-semibold text-slate-300 mb-1">Intern — Commercial Operations</h3>
+          <p class="text-slate-500 text-sm font-medium mb-2">Optinet - UFINET &middot; 2016</p>
+          <p class="text-slate-500 text-sm">
+            Assisted the Commercial Manager in streamlining operations by gathering and analyzing client requirements.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
+</section>

@@ -1,9 +1,12 @@
 ---
-import avatarUrl from '../assets/avatar.png'; // Cambia esto por la ruta de tu imagen
+import avatarUrl from '../assets/avatar.png';
 ---
 
-<img
-  src={avatarUrl.src}
-  alt="Avatar"
-  class="w-100 h-100"
-/>
+<div class="relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-full blur-2xl opacity-20 scale-110"></div>
+  <img
+    src={avatarUrl.src}
+    alt="Francisco Sanabria"
+    class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-2 border-slate-700 shadow-2xl"
+  />
+</div>

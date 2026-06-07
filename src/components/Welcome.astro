@@ -1,36 +1,58 @@
 ---
-import Avatar from './avatar.astro'; // Componente para tu avatar
+import Avatar from './avatar.astro';
 ---
 
-<div id="home" class="bg-gray-900 text-white dark:bg-gray-800 min-h-screen flex items-center justify-center">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-    <!-- Left Content -->
-    <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-4xl lg:text-6xl font-bold text-gradient">
-        Welcome, I'm Fran
+<section id="home" class="hero-bg grid-bg min-h-screen flex items-center pt-16">
+  <div class="max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center gap-12 w-full">
+
+    <div class="md:w-3/5 text-center md:text-left">
+      <span class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm px-3 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        Open to remote opportunities
+      </span>
+
+      <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight">
+        Hi, I'm <span class="gradient-text">Fran</span>
       </h1>
-      <p class="text-gray-400 mt-4 text-lg">
-        Mobile Developer | Flutter Enthusiast | Clean Architecture Advocate | Computer Science Student
+
+      <p class="text-xl text-slate-300 mt-4 font-medium">
+        Senior Mobile Developer &middot; TL Backup &middot; Flutter Specialist
       </p>
-      <div class="mt-6">
-        <!-- Button to Contact Section -->
-        <a href="#contact">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Contact me
-          </button>
+
+      <p class="text-slate-400 mt-6 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+        I build high-performance mobile apps used by real users. Currently serving as TL Backup — standardizing mobile practices and architecting scalable solutions.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-7 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/25">
+          Get in touch
         </a>
-        <!-- Button to Portfolio Section -->
-        <a href="#projects">
-          <button class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded ml-4">
-            My Projects
-          </button>
+        <a href="#projects" class="border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-white font-semibold py-3 px-7 rounded-full transition-all duration-200">
+          View projects
         </a>
+      </div>
+
+      <div class="mt-12 flex flex-wrap gap-8 justify-center md:justify-start">
+        <div>
+          <p class="text-3xl font-bold text-white">4+</p>
+          <p class="text-slate-400 text-sm mt-0.5">Years experience</p>
+        </div>
+        <div class="w-px bg-slate-800 hidden sm:block"></div>
+        <div>
+          <p class="text-3xl font-bold text-white">3+</p>
+          <p class="text-slate-400 text-sm mt-0.5">Apps shipped</p>
+        </div>
+        <div class="w-px bg-slate-800 hidden sm:block"></div>
+        <div>
+          <p class="text-3xl font-bold text-white">2+</p>
+          <p class="text-slate-400 text-sm mt-0.5">Open source projects</p>
+        </div>
       </div>
     </div>
 
-    <!-- Right Content -->
-    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+    <div class="md:w-2/5 flex justify-center">
       <Avatar />
     </div>
+
   </div>
-</div>
+</section>

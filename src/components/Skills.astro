@@ -3,123 +3,86 @@ import flutterIcon from "../assets/flutter.svg";
 import swiftIcon from "../assets/swift.svg";
 import kotlinIcon from "../assets/kotlin.svg";
 import nextIcon from "../assets/next.svg";
-
-
-import NodeIcon from "../assets/nodejs.svg";
-import Django from "../assets/django.svg";
-import SpringIcon from "../assets/spring.svg";
-import ExpressIcon from "../assets/express.svg";
-
-import Codemagic from "../assets/codemagic.svg";
 import DockerIcon from "../assets/docker.svg";
 import GithubActions from "../assets/github.svg";
-
+import Codemagic from "../assets/codemagic.svg";
 import FirebaseIcon from "../assets/firebase.svg";
-import MongoDBIcon from "../assets/mongodb.svg";
 import PostgresIcon from "../assets/postgresql.svg";
+import GRPCIcon from "../assets/grpc.svg";
 
+type Skill = { name: string; icon?: string; initials?: string; cdnIcon?: boolean; primary?: boolean };
+type Category = { label: string; skills: Skill[] };
+
+const categories: Category[] = [
+  {
+    label: "Mobile & Frontend",
+    skills: [
+      { name: "Flutter", icon: flutterIcon.src, primary: true },
+      { name: "Kotlin", icon: kotlinIcon.src },
+      { name: "Swift", icon: swiftIcon.src },
+      { name: "Next.js", icon: nextIcon.src },
+    ],
+  },
+  {
+    label: "Architecture & Patterns",
+    skills: [
+      { name: "Clean Architecture", initials: "CA" },
+      { name: "BLoC", icon: "https://cdn.simpleicons.org/dart/0175C2", cdnIcon: true },
+      { name: "gRPC", icon: GRPCIcon.src  },
+      { name: "REST APIs", icon: "https://cdn.simpleicons.org/openapiinitiative/6EA33E", cdnIcon: true },
+    ],
+  },
+  {
+    label: "Backend",
+    skills: [
+      { name: "Go", icon: "https://cdn.simpleicons.org/go/00ADD8", cdnIcon: true },
+      { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933", cdnIcon: true },
+      { name: "Firebase", icon: FirebaseIcon.src },
+      { name: "PostgreSQL", icon: PostgresIcon.src },
+    ],
+  },
+  {
+    label: "DevOps & CI/CD",
+    skills: [
+      { name: "GitHub Actions", icon: GithubActions.src },
+      { name: "Codemagic", icon: Codemagic.src },
+      { name: "Fastlane", icon: "https://cdn.simpleicons.org/fastlane/00F200", cdnIcon: true },
+      { name: "Docker", icon: DockerIcon.src },
+    ],
+  },
+];
 ---
 
-<div id="skills"class="bg-gray-50 dark:bg-gray-800 py-16">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 dark:text-white">My Skills</h2>
-    <p class="text-gray-600 dark:text-gray-400 mt-4">
-      These are the technologies and tools I work with.
-    </p>
-
-    <!-- Frontend Section -->
-    <div class="mt-12">
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-        Frontend
-      </h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-        <div class="flex flex-col items-center">
-          <img src={flutterIcon.src} alt="Flutter" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Flutter</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={swiftIcon.src} alt="Flutter" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Swift</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={kotlinIcon.src} alt="Flutter" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Kotlin</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={nextIcon.src} alt="Flutter" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">NextJS</p>
-        </div>
-      </div>
+<section id="skills" class="bg-slate-950 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3">Tech stack</p>
+      <h2 class="text-4xl font-bold text-white">Skills & Technologies</h2>
+      <p class="text-slate-400 mt-4 max-w-xl mx-auto">
+        The tools and technologies I use to bring ideas to life.
+      </p>
     </div>
 
-    <!-- Backend Section -->
-    <div class="mt-12">
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-        Backend
-      </h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-        <div class="flex flex-col items-center">
-          <img src={NodeIcon.src} alt="Backend" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Node.js</p>
+    <div class="space-y-12">
+      {categories.map(cat => (
+        <div class="fade-up">
+          <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-widest mb-6">{cat.label}</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {cat.skills.map(skill => (
+              <div class={`relative group bg-slate-800/50 border rounded-xl p-5 flex flex-col items-center gap-3 transition-all duration-200 hover:bg-slate-800 hover:border-indigo-500/50 hover:-translate-y-0.5 ${skill.primary ? 'border-indigo-500/40' : 'border-slate-700/60'}`}>
+                {skill.primary && (
+                  <span class="absolute top-2 right-2 text-xs bg-indigo-500/20 text-indigo-400 px-1.5 py-0.5 rounded font-medium">Primary</span>
+                )}
+                {skill.icon
+                  ? <img src={skill.icon} alt={skill.name} class="w-10 h-10 object-contain" onerror="this.style.opacity='0.3'" />
+                  : <div class="w-10 h-10 flex items-center justify-center bg-indigo-500/20 rounded-lg text-indigo-400 font-bold text-sm">{skill.initials}</div>
+                }
+                <p class="text-slate-300 text-sm font-medium">{skill.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <div class="flex flex-col items-center">
-          <img src={Django.src} alt="Backend" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Django</p>
-        </div>
-
-        <div class="flex flex-col items-center">
-          <img src={SpringIcon.src} alt="Backend" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">SpringBoot</p>
-        </div>
-
-        <div class="flex flex-col items-center">
-          <img src={ExpressIcon.src} alt="Backend" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">ExpressJS</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- DevOps Section -->
-    <div class="mt-12">
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-        DevOps
-      </h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-        <div class="flex flex-col items-center">
-          <img src={DockerIcon.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Docker</p>
-        </div>
-        <!-- Add more DevOps skills -->
-        <div class="flex flex-col items-center">
-          <img src={Codemagic.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">CodeMagic</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={GithubActions.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Github Actions</p>
-        </div>
-      </div>
-    </div>
-    <!-- Tools and Databases Section -->
-    <div class="mt-12">
-      <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-        Tools and Databases
-      </h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-        <div class="flex flex-col items-center">
-          <img src={FirebaseIcon.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">Firebase</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={MongoDBIcon.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">MongoDB</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src={PostgresIcon.src} alt="DevOps" class="w-16 h-16" />
-          <p class="mt-4 text-gray-800 dark:text-white">PostgreSQL</p>
-        </div>
-      </div>
+      ))}
     </div>
   </div>
-</div>
+</section>

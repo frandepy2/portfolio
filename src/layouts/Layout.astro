@@ -2,28 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Francisco Sanabria</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M67ZMVD5KM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-M67ZMVD5KM');
-  </script>
-
+    <meta name="description" content="Francisco Sanabria — Mobile Developer and Flutter specialist. Building clean, scalable mobile and web applications." />
+    <meta property="og:title" content="Francisco Sanabria | Mobile Developer" />
+    <meta property="og:description" content="Mobile Developer specializing in Flutter, clean architecture, and cross-platform apps." />
+    <meta property="og:type" content="website" />
+    <title>Francisco Sanabria | Mobile Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M67ZMVD5KM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M67ZMVD5KM');
+    </script>
   </head>
-  <body>
+  <body class="bg-slate-950 font-sans antialiased">
     <slot />
   </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-bg {
+    background:
+      radial-gradient(ellipse at 15% 50%, rgba(99, 102, 241, 0.13) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+      #020617;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .grid-bg {
+    background-image: linear-gradient(rgba(99,102,241,0.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(99,102,241,0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
 </style>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) el.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
